@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; 
+}
+
+input[type = text]:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 10px red;
+    width: 300px;
+}
+
+
+body {
+    background-image: linear-gradient(to right, yellow, orange, rgb(252, 100, 100));
+    color: black;
+}
+
+input {
+    background: transparent;
+    flex: 1;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    font-size: 18px;
+    color: black;
+}
+
+.search-container {
+    width: 300px;
+    background: rgb(255, 196, 87);
+    margin: 200px auto 0;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.search-container input,
+.search-container .suggestions {
+    max-height: 300px;
+    overflow-y: scroll;
+    
+}
+
+.search-container .suggestions {
+    border-top: 1px solid red;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 10px 1px;
+    cursor: pointer;
+    
+}
+
+ul li:hover {
+    background: red;
+    
+}
+
+
+::placeholder{
+    color: grey;
+}
